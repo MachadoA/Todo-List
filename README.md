@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## O que foi usado
+## Technologies Used
 
 React;
 LocalStorage
@@ -11,11 +11,17 @@ LocalStorage
 
 ![](./images/ecra.png)
 
-### Acompanha o resultado 
+### Check the Result
 
-Visualiza em [http://localhost:3000](http://localhost:3000) 
+View it at [http://localhost:3000](http://localhost:3000) 
 
-### Contacta-me
+### Contact Me
 
-Caso tenhas alguma dúvida ou sugestão para acrescentar, entra em contacto comigo!
+If you have any questions or suggestions to add, feel free to get in touch with me!
+
+
+
+
+
+
 
