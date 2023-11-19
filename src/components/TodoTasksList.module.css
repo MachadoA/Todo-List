@@ -1,0 +1,51 @@
+
+.task{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 350px;
+    padding: 4px 15px;
+    box-sizing: border-box;
+    text-align: center;
+    border-bottom: 1px solid #555;
+}
+
+.task.isCompleted{
+    text-decoration: line-through;
+    color: #F28705;
+}
+.taskDescription{
+    width: 230px;
+    word-break: break-word;
+}
+
+.task button{
+    width: 50px;
+}
+
+.taskList{
+    padding-bottom: 30px;
+}
+
+.checkbox{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border: none;
+}
+.checkbox input[type="checkbox"]{
+  width: 100%;
+  height: 100%;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media(min-width:910px){
+    .task{
+        width: 900px;
+    }
+    .taskDescription{
+        width: 800px;
+    }
+}
