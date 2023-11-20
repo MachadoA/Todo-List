@@ -9,7 +9,8 @@
 body{
   background-image: url('https://burst.shopifycdn.com/photos/wrtiting-tools.jpg?width=925&format=pjpg&exif=1&iptc=1');
   background-repeat: no-repeat;
-  background-size: 100vw 100%;
+  /* background-size: 100vw 100%; */
+  background-size: cover;
   min-height: 100vh;
   font-family: 'Open Sans', sans-serif;
 }
