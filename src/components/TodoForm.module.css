@@ -12,6 +12,12 @@ main{
     width: 100%;
     padding-bottom: 10px;
 }
+.alert{
+    text-align: center;
+    padding-bottom: 10px;
+    color: #f28705;
+    font-weight: bold;
+}
 
 .taskOpen{
     display: flex;

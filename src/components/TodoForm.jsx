@@ -20,6 +20,7 @@ export default function TodoForm() {
     return storedTasks ? JSON.parse(storedTasks) : [];
   });
   const [toDoList, setToDoList] = useState(getItems());
+  const [showAlert, setShowAlert] = useState(false);
   const MemorizeTaskList = React.memo(TodoTasksList);
 
   const setItems = (items) => {
@@ -31,6 +32,12 @@ export default function TodoForm() {
   }, [toDoList]);
 
   const submitTask = () => {
+
+    if(task === "" &&  description === "" ){
+      setShowAlert(true);
+      return;
+    } 
+
     idTask.current++;
     const newTask = { id: idTask.current, task, description, isCompleted: false };
     setTaskList((oldList) => [...oldList, newTask]);
@@ -39,6 +46,7 @@ export default function TodoForm() {
     setTask('');
     setDescription('');
     inputRefTitle.current.focus();
+    setShowAlert(false)
   };
 
   const cleanTasks = () => {
@@ -76,6 +84,7 @@ export default function TodoForm() {
           <Button label="Adicionar" onClick={submitTask} />
         </div>
       </main>
+      {showAlert && <p className={style.alert}>Preencha um dos campos acima</p>}
 
       <hr />
       <section className={style.taskPanel}>
